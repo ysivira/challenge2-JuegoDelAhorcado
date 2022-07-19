@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Juego del Ahorcado</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <boby>
+        <header>
+            <img id= logo src="imagenes/logo.jpg">
+            <h1>Juego del Ahorcado</h1>
+        </header>
+        
+        <main>
+            <button id="adivinar">ADIVINAR PALABRA</button>
+
+            <div class="evaluar">
+                <input id="input-text" type="text" maxlength="1" placeholder="INGRESE LETRA">
+                <button id="probarLetra">PROBAR</button>
+            </div>
+             
+            <div class="imagen-ahorcado">
+                <canvas id="canvas" width="400" height="300"></canvas>
+            </div>
+
+            <div class="mensaje">
+                    <img id="ganaste" src="imagenes/ganaste.jpeg">
+                    <img id="perdiste" src="imagenes/perdiste.jpeg">
+            </div>
+
+            <div class="palabra-oculta">
+                <p id="palabra"></p>
+            </div>
+
+            <div class="errado">
+                <h3></h3>
+            </div>
+
+            <div class="botones">
+                <button >NUEVO JUEGO</button>
+                <button>DESISTIR</button>
+            </div>
+        </main>
+        
+        <footer>
+            <p class="copyright">&copy Copyright Yurlian J Sivira R 2022</p>
+        </footer>
+
+        <script src="/js/canvas.js"></script>
+        <script src="js/funciones.js"></script>
+        <script src="js/juego.js"></script>
+    </boby>
+</html>
