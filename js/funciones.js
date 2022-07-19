@@ -30,11 +30,11 @@ function capturarLetra(){
     
     document.querySelector("#input-text").focus();
     document.querySelector("#input-text").value = "";
-    verificarLetra();
+    verificarLetra(letra);
     gamer();
 }
 
-function verificarLetra(){
+function verificarLetra(letra){
     espacio = document.querySelectorAll("#palabra span");
     let acierto = false;
 
